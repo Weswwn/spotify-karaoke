@@ -1,0 +1,31 @@
+{
+  "name": "spotify-karaoke",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Weswwn/spotify-karaoke.git",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
+    "axios": "^0.21.1",
+    "babel-loader": "^8.2.2",
+    "eslint-webpack-plugin": "^2.5.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "scripts": {
+    "start": "webpack serve"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
