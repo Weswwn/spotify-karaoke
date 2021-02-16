@@ -18,10 +18,15 @@ module.exports = {
                     presets: ['@babel/preset-env', '@babel/preset-react']
                 }
             },
+        },
+        {
+            test: /\.tsx?$/,
+            exclude: /node_modules/,
+            use: 'ts-loader',
         }]
     },
     resolve: {
-        extensions: [".js", ".json", ".jsx", ".css"],
+        extensions: [".js", ".json", ".jsx", ".css", ".tsx", ".ts"],
     },
     devServer: {
         port: 3000,
@@ -33,6 +38,7 @@ module.exports = {
     },
     plugins: [new ESLintPlugin({
         emitError: true,
-        emitWarning: true
+        emitWarning: true,
+        extensions: ['.tsx']
     })]
 };

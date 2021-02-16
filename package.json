@@ -8,8 +8,12 @@
     "@babel/core": "^7.12.16",
     "@babel/preset-env": "^7.12.16",
     "@babel/preset-react": "^7.12.13",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
     "axios": "^0.21.1",
     "babel-loader": "^8.2.2",
+    "eslint-import-resolver-webpack": "^0.13.0",
     "eslint-webpack-plugin": "^2.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -17,15 +21,19 @@
     "webpack-cli": "^4.5.0"
   },
   "scripts": {
-    "start": "webpack serve"
+    "start": "webpack serve",
+    "lint": "eslint --fix --ext .tsx ."
   },
   "devDependencies": {
+    "@typescript-eslint/parser": "^4.15.1",
     "eslint": "^7.20.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.1.5",
     "webpack-dev-server": "^3.11.2"
   }
 }
